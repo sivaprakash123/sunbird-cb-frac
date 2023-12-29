@@ -1,7 +1,7 @@
 FROM openjdk:8
 
 RUN apt-get update \
-    && apt-get install -y \
+    && apt-get install -y --no-install-recommends apt-utils && apt-get install -y \
         curl \
         libxrender1 \
         libjpeg62-turbo \
